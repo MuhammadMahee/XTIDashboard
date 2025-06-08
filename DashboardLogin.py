@@ -4,7 +4,7 @@ import streamlit as st
 USERNAME = "test"
 PASSWORD = "123"
 
-powerbi_url = "https://app.powerbi.com/groups/me/reports/bb39f0a4-7e88-4eb8-97d0-f1e3ec93e1b2/60a94c464e86414eb784?experience=power-bi"
+powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiZmYxYjRmOGEtNTVhNi00YzQ5LWIxZjMtOTM4NTE1OTQzMmU1IiwidCI6IjViN2RiZDllLTk3YWYtNGFiOC04YmM2LWE5MzlhMjJkNWM3NCJ9"
 
 # Initialize session state keys
 if "logged_in" not in st.session_state:
