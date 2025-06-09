@@ -5,7 +5,6 @@ import base64
 st.set_page_config(page_title="Xclusive Login", layout="centered")
 
 # --- Constants ---
-logo_path = "xti_logo.png"
 USERNAME = "test"
 PASSWORD = "123"
 powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiNDFlN2I3OWUtZGM4Zi00MmIzLTg2NGUtMWQ4YWJlZDIwMjRiIiwidCI6IjViN2RiZDllLTk3YWYtNGFiOC04YmM2LWE5MzlhMjJkNWM3NCJ9"
@@ -60,9 +59,9 @@ if not st.session_state.logged_in:
             vertical-align: middle;
         }}
         </style>
-        <div class="login-card">
-            <h3><img src="data:image/png;base64,{base64_logo}" />XCLUSIVE TRADING HOLDINGS LLC</h3>
-        </div>
+#        <div class="login-card">
+ #           <h3><img src="data:image/png;base64,{base64_logo}" />XCLUSIVE TRADING HOLDINGS LLC</h3>
+  #      </div>
         """,
         unsafe_allow_html=True
     )
