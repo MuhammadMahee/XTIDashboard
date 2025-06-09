@@ -1,14 +1,17 @@
 import streamlit as st
 import base64
 
-# --- Page Config ---
-st.set_page_config(page_title="Xclusive Login", layout="centered")
+# --- Conditional Page Config ---
+if "logged_in" in st.session_state and st.session_state.logged_in:
+    st.set_page_config(page_title="Xclusive Dashboard", layout="centered")
+else:
+    st.set_page_config(page_title="Xclusive Login", layout="centered")
 
 # --- Constants ---
-logo_path = "xti_logo.png"
+# logo_path = "xti_logo.png"
 USERNAME = "test"
 PASSWORD = "123"
-powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiNDFlN2I3OWUtZGM4Zi00MmIzLTg2NGUtMWQ4YWJlZDIwMjRiIiwidCI6IjViN2RiZDllLTk3YWYtNGFiOC04YmM2LWE5MzlhMjJkNWM3NCJ9"
+powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiZmYxYjRmOGEtNTVhNi00YzQ5LWIxZjMtOTM4NTE1OTQzMmU1IiwidCI6IjViN2RiZDllLTk3YWYtNGFiOC04YmM2LWE5MzlhMjJkNWM3NCJ9"
 
 # --- Session State Init ---
 if "logged_in" not in st.session_state:
